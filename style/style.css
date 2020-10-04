@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+    padding: 1% 1% 1% 1%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    margin-left: 20%;
+    /* padding-left: 200px; */
+}
+
+#mySidenav {
+    display: block;
+}
+
+.carousel-item img {
+    max-height: 30rem;
+    width: 96%;
+    border: 1px solid black;
+}
+
+#_contact {
+    width: 90%;
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        width: 0;
+        height: 30%;
+        padding-top: 15px;
+        border-radius: 15px;
+        background-color: transparent;
+    }
+    .sidenav .closebtn {
+        visibility: visible;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .main {
+        margin-left: 0;
+    }
+    .carousel-item img {
+        height: 10rem;
+    }
+    #_contact iframe {
+        height: 20rem;
+    }
+}
